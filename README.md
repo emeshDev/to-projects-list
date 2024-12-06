@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fullstack CRUD Posts
+
+Simple CRUD Posts template inspired by [jstack](https://github.com/upstash/jstack) (please give Stars to His Github)
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org/)
+- [Hono](https://hono.dev/) - Backend framework
+- [Prisma](https://www.prisma.io/) - Database ORM
+- [React Query](https://tanstack.com/query/latest) - Data fetching
+- [Clerk](https://clerk.com/) - Authentication
+- [Neon](https://neon.tech/) - PostgreSQL Database
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+
+## Features
+
+- 🔐 Authentication with Clerk
+- 🚀 Full-stack TypeScript
+- 🎯 Type-safe API
+- 📚 CRUD operations
+- 🎨 Modern UI with shadcn/ui
+- 🌙 Dark mode
+- 🔄 Optimistic updates
+- 🛡️ Protected API routes
+- 🧪 Validation with Zod
+- 🔒 XSS Protection
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+git clone <repository-url>
+```
+
+2. Install dependecies
+
+```bash
+bun install
+```
+
+3. Set up environment variables
+
+```bash
+# Create .env file
+cp .env.example .env
+```
+
+4. Set up your database
+
+```bash
+bunx prisma geenrate
+bunx prisma db push
+```
+
+5. Run the development server
+
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This Web App Template is ready to be deployed on Vercel or Any App Hosting (Node JS or Edge Serverless Integrated)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Credits
 
-## Learn More
+This project is inspired by jstack. Please consider giving it a star ⭐
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
